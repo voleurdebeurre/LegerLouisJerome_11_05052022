@@ -1,0 +1,16 @@
+.logoContainer h1{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: var(--fs-l);
+    position: relative;
+    gap: .25rem;
+}
+
+.logoContainer h1 svg{
+    position: relative;
+    bottom: -.8rem;
+    fill: var(--color-primary);
+    height: 1.45rem;
+}

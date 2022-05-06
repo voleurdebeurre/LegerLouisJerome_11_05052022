@@ -1,0 +1,8 @@
+.headerContainer{
+    width: 100%;
+}
+
+.headerContainer header{
+    display: flex;
+    flex-direction: row;
+}

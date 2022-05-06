@@ -1,0 +1,37 @@
+.splashImageContainer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.splashImageContainer img{
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.splashImageContainer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    mix-blend-mode: darken;
+    opacity: .3;
+    z-index: 1;
+}
+
+.splashImageContainer h2{
+    position: absolute;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+    z-index: 2;
+}
