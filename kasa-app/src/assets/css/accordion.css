@@ -1,0 +1,85 @@
+.accordionComponent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.accordionHeader{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    background: var(--color-primary);
+    border-radius: var(--border-radius-s);
+}
+
+.accordionHeader h4{
+    color: var(--color-white);
+    font-size: var(--fs-s);
+    font-weight: 400;
+    padding: 1rem 2rem;
+}
+
+.accordionHeader button{
+    margin-left: auto;
+    padding: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accordionHeader button img{
+    transform: rotate(0deg);
+    transition: all .3s ease-in;
+}
+
+.accordionContent{
+    background: var(--color-lightgrey);
+    border-radius: var(--border-radius-s);
+    padding: 0;
+    margin-top: -1rem;
+    transform: scaleY(0);    
+    transform-origin: top;
+    transition: transform .3s ease-in;
+}
+
+.accordionContent p{
+    color: var(--color-primary);
+    font-size: var(--fs-s);
+    font-weight: 400;
+    white-space: pre-wrap;
+    display: none;
+}
+
+.openAccordion{
+    transform: scaleY(1);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    transition: transform .3s ease-in;
+}
+
+.accordionHeader button img.arrowDown{
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+}
+
+.splashAccordion .accordionComponent{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+
+.splashAccordion .accordionComponent{
+    width: 90%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .accordionComponent{
+        margin: 2rem 0 0 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

@@ -1,4 +1,8 @@
 .cardContainer{
+    display: flex;
+}
+
+.cardContainer a{
     position: relative;
     display: flex;
     overflow: hidden;
@@ -6,13 +10,13 @@
     border-radius: var(--border-radius-s);
 }
 
-.cardContainer img{
+.cardContainer a img{
     position: relative;
     width: 100%;
     object-fit: cover;
 }
 
-.cardContainer::before{
+.cardContainer a::before{
     content: '';
     position: absolute;
     top: 0;
@@ -23,7 +27,7 @@
     z-index: 1;
 }
 
-.cardContainer h3{
+.cardContainer a h3{
     position: absolute;
     bottom: 0;
     width: 100%;

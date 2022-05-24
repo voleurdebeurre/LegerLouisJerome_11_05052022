@@ -1,0 +1,61 @@
+.logementMeta{
+    display: flex;
+    flex-direction: column;
+}
+
+.logementHost{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logementHost p{
+    color: var(--color-primary);
+    font-size: var(--fs-s);
+    font-weight: 400;
+    text-align: right;
+    max-width: 7rem;
+    padding: 0 1rem 0 0;
+}
+
+.logementHost img{
+    display: block;
+    border-radius: 50%;
+    width: 5rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.logementRating{
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+.logementRating img{
+    transform: scale(.7);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .logementMeta{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .logementRating{
+        margin-left: inherit;
+    }
+
+    .logementHost img{
+        width: 4rem;
+    }
+
+    .logementRating img{
+        transform: scale(.8);
+        width: 1.2rem;
+    }
+
+}

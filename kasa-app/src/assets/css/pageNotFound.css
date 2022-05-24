@@ -1,0 +1,37 @@
+.pageNotFound{
+    display: flex;
+    flex-direction: column;
+}
+
+.pageNotFound h1{
+    font-size: var(--fs-xl);
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.pageNotFound h2{
+    font-size: var(--fs-l);
+    text-align: center;
+    color: var(--color-primary);
+    font-weight: 300;
+}
+
+.pageNotFound a{
+    font-size: var(--fs-s);
+    text-align: center;
+    color: var(--color-primary);
+    margin: 2rem 0; 
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .pageNotFound h1{
+        margin: 5rem 0 0 0;
+        font-size: 7rem;
+    }
+
+    .pageNotFound h2{
+        font-size: var(--fs-s);
+    }
+}

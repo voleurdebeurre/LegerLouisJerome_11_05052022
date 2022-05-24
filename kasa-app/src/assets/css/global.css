@@ -26,7 +26,11 @@
 }
 
 #root{
-    margin: 1rem auto;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.contentWrapper{
+    margin: 0 auto;
     max-width: 1280px;
 }
 
@@ -37,4 +41,38 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2rem 1.5rem;
     gap: 2rem;
+}
+
+.logementTitle, .logementInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .contentWrapper{
+        max-width: 768px;
+    }
+
+    .indexContents{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logementTitle, .logementInfos{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px) {
+    .contentWrapper{
+        max-width: 640px;
+    }
+
+    .indexContents{
+        grid-template-columns: 1fr;
+        padding: 0;
+        background: none;
+    }
 }

@@ -34,4 +34,17 @@
     text-align: center;
     color: var(--color-white);
     z-index: 2;
+    font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .splashImageContainer{
+        min-height: 7.5rem;
+    }
+
+    .splashImageContainer h2{
+        font-size: var(--fs-s);
+    }
 }

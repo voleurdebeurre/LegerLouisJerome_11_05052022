@@ -1,11 +1,11 @@
 import '../assets/css/splash.css';
-import SplashIndex from '../assets/images/splashIndex.jpg';
 
-function Splash() {
+function Splash(data) {
+  let {image, title} = data
   return (
     <div className="splashImageContainer">
-        <h2>Chez vous, partout et ailleurs</h2>
-        <img src={SplashIndex} alt="Paysage de montagne et de mer" />
+        <h2>{title}</h2>
+        <img src={image} alt={title} />
     </div>
   );
 }
